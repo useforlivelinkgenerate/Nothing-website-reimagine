@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: ndot;
+  src: url("./images/fonts/Ndot-55-DoenNkNm.ttf");
+}
+@font-face {
+  font-family: NH;
+  src: url("./images/fonts/korataki-rg-3cf0d889-B6eTgmP5.ttf");
+}
+@font-face {
+  font-family: sameToNH;
+  src: url("./images/fonts/korataki-rg-3cf0d889.ttf");
+}
+
+/* navber started */
+
+.main {
+  max-width: 2000px;
+}
+
+.navber {
+  padding: 20px 27px;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  width: fit-content;
+}
+
+.logo img {
+  width: 19.5vw;
+}
+
+.logo h1 {
+  position: absolute;
+  top: 3.2vw;
+  left: 9.5vw;
+  transform: translate(-50%, -50%);
+  font-size: 3.5vw;
+  color: white;
+  text-transform: uppercase;
+  font-family: ndot;
+  font-weight: 400;
+}
+
+.navInput {
+  position: relative;
+  width: fit-content;
+}
+
+.navInput img {
+  width: 17vw;
+}
+
+.navInput input {
+  position: absolute;
+  top: 1.6vw;
+  left: 8vw;
+  transform: translate(-45%, -50%);
+  padding: 10px 12px;
+  background-color: transparent;
+  outline: none;
+  font-size: 1vw;
+  color: white;
+  border: none;
+  transition: all 0.3s;
+}
+
+.navInput input:hover {
+  animation: navSearchAnimate 0.8s linear alternate infinite 0.3s;
+}
+
+.navBtnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 27vw;
+}
+
+.navBtns {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBtnDiv:hover {
+  animation: navSearchAnimate 0.8s linear alternate infinite 0.3s;
+}
+
+.btn {
+  position: absolute;
+  top: 1.2vw;
+  left: 3.5vw;
+  transform: translate(-45%, -47%);
+  background-color: transparent;
+  border: none;
+  font-size: 0.8vw;
+  font-weight: 500;
+  color: white;
+  outline: none;
+  font-family: NH;
+}
+
+.navBtns img {
+  width: 8vw;
+}
+
+.menuBar{
+  display: none;
+}
+
+@keyframes navSearchAnimate {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+/* make navber to responsice */
+
+@media (max-width: 1200px) {
+  .navber {
+    align-items: center;
+    gap: 10px;
+    padding: 2vw 0.7vw;
+  }
+
+  .logo img {
+    width: 23vw;
+  }
+
+  .logo h1 {
+    font-size: 4.3vw;
+    top: 4vw;
+    left: 12vw;
+  }
+
+  .navInput img {
+    width: 22vw;
+  }
+
+  .navInput input {
+    font-size: 1.5vw;
+    top: 2vw;
+    left: 11vw;
+    padding: 12px 16px;
+  }
+
+  .navBtnDiv {
+    width: 45vw;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .navBtns img {
+    width: 12vw;
+  }
+
+  .btn {
+    font-size: 1.3vw;
+    top: 2vw;
+    left: 5vw;
+  }
+}
+@media (max-width: 800px) {
+
+
+  .logo img {
+    width: 34vw;
+  }
+
+  .logo h1 {
+    font-size: 6.3vw;
+    top: 5vw;
+    left: 17vw;
+  }
+
+ .navInput{
+  display: none;
+ }
+
+  .navBtnDiv{
+    display: none;
+  }
+
+  .menuBar{
+    display: block;
+    position: relative;
+  }
+  .menuBar .svg2{
+    width: 54px ;
+    height: 54px;
+  }
+  .menuBar .svg1{
+    height: 27px;
+    width: 27px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+  }
+}
+
+/* navber complete */
+
+/* landing start */
+
+.section1 {
+  max-width: 1800px;
+  height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+.section1Content {
+  width: 100%;
+}
+
+.patternParent {
+  height: 35vw;
+  position: relative;
+  width: 100vw;
+}
+
+.linesShadow {
+  box-shadow: 0 0 16px 0px rgba(255, 255, 255, 0.829);
+  background-color: white;
+  position: absolute;
+  height: 2px;
+}
+
+.line-1 {
+  top: 2.8vw;
+  left: 18.7vw;
+  width: 11vw;
+  transform: rotate(35deg) translate(-8%, -21%);
+}
+.line-2 {
+  width: 15vw;
+  top: 5.4vw;
+  left: 27.98vw;
+}
+.line-3 {
+  width: 8.6vw;
+
+  top: 7.2vw;
+  left: 42.5vw;
+  transform: rotate(25deg);
+}
+
+.line-4 {
+  width: 50vw;
+  top: 9.04vw;
+  left: 50.7vw;
+}
+
+/* left bottom lines started */
+
+.line-5 {
+  top: 9.6vw;
+  left: 38vw;
+  width: 15.8vw;
+  transform: rotate(27deg) translate(-8%, -21%);
+}
+.line-6 {
+  top: 12.655vw;
+  left: 51.8vw;
+  width: 4vw;
+}
+.line-7 {
+  top: 13.76vw;
+  left: 55.8vw;
+  width: 3.8vw;
+  transform: rotate(30deg) translate(-8%, -21%);
+}
+.line-8 {
+  width: 13vw;
+
+  top: 14.6vw;
+  left: 59.08vw;
+}
+.line-9 {
+  width: 5.3vw;
+
+  top: 12.86vw;
+  left: 71.4vw;
+  transform: rotate(-41deg);
+}
+
+.line-10 {
+  width: 25vw;
+
+  top: 11.07vw;
+  left: 76vw;
+}
+
+/* botttom lines */
+
+.line-11 {
+  width: 44vw;
+  bottom: 2vw;
+}
+.line-12 {
+  width: 6vw;
+
+  bottom: 3.277vw;
+  left: 43.6vw;
+  transform: rotate(-25deg);
+}
+.line-13 {
+  width: 50vw;
+
+  bottom: 4.5vw;
+  left: 49.2vw;
+}
+
+.section1WhitePhone,
+.section1BlackPhone {
+  position: absolute;
+  width: 16.6vw;
+  transform: rotate(-32deg);
+}
+
+.section1WhitePhone img,
+.section1BlackPhone img {
+  position: absolute;
+  width: 100%;
+}
+
+.section1WhitePhone {
+  left: 55vw;
+  z-index: 99;
+  top: 8vw;
+}
+
+.section1BlackPhone {
+  left: 50.5vw;
+  top: 5.5vw;
+}
+
+/* edit text content in first section */
+
+.textContent {
+  position: absolute;
+  top: 17vw;
+  padding-left: 3vw;
+}
+
+.textContent h1 {
+  font-size: 3vw;
+  font-family: sameToNH;
+  font-weight: 400;
+  color: rgb(146, 146, 146);
+  text-align: center;
+  margin-bottom: 0.6vw;
+}
+
+.textContent p {
+  word-spacing: 0.2vw;
+  letter-spacing: 0.1vw;
+  font-size: 1.3vw;
+  font-family: ndot;
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+  margin-left: 2vw;
+  margin-top: 5.2vw;
+}
+
+/* make media queries for section 1 */
+@media (max-width: 1200px) {
+  .patternParent {
+    height: 45vw;
+  }
+  .section1BlackPhone img,
+  .section1WhitePhone img {
+    width: 18vw;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .navber{
+    padding: 18px 12px;
+  }
+  .patternParent {
+    height: 100vw;
+  }
+  .linesShadow {
+    display: none;
+  }
+  .textContent {
+    position: relative;
+  }
+
+  .section1BlackPhone,
+  .section1WhitePhone {
+    position: absolute;
+    bottom: 0;
+    left: 26vw;
+  }
+  .section1BlackPhone{
+    bottom: 3vw;
+  }
+  .section1WhitePhone{
+    left: 33vw;
+  }
+    .section1BlackPhone img,
+  .section1WhitePhone img {
+    width: 24vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .textContent h1 {
+    font-size: 5.5vw;
+  }
+
+  .textContent p{
+    top: 40vw;
+    font-size: 3vw;
+    position: absolute;
+    width: 35vw;
+    left: 20vw;
+    z-index: -2;
+  }
+}
